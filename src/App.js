@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./App.css";
+import './App.css'
 import Coin from "./Coin";
 
 // https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=false
@@ -31,12 +31,12 @@ function App() {
   });
 
   return (
-    <div className="coin-app text-center">
-      <h1 className="search-coin "> Search for Currency</h1>
+    <div className="coin-app ">
+      <h1 className="coin-search "> Search for Currency</h1>
       <form>
         <input
           type="text"
-          className="input-coin mb-5 "
+          className="coin-input "
           placeholder="search"
           onChange={handleChange}
         />
